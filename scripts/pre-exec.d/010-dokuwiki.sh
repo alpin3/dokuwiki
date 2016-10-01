@@ -17,6 +17,7 @@ else
 <Directory /opt/dokuwiki>
     Options FollowSymLinks
     AllowOverride All
+    Require all granted
 </Directory>
 
 Alias $SUBURI "/opt/dokuwiki/"
