@@ -1,7 +1,7 @@
-FROM alpin3/php-apache:3.4
+FROM alpin3/php7-apache
 MAINTAINER kost - https://github.com/kost
 
-ENV VERSION  2017-02-19b
+ENV VERSION  2018-04-22a
 
 RUN apk --update --no-cache add wget ca-certificates php5-curl php5-gd php5-json php5-openssl php5-xml php5-zlib \
     && mkdir /opt \
