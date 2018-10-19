@@ -3,7 +3,7 @@ MAINTAINER kost - https://github.com/kost
 
 ENV VERSION  2018-04-22a
 
-RUN apk --update --no-cache add wget ca-certificates php7-session php7-curl php7-gd php7-json php7-openssl php7-xml php7-zlib \
+RUN apk --update --no-cache add wget ca-certificates php7-session php7-curl php7-gd php7-json php7-openssl php7-xml php7-zlib php7-ldap \
     && mkdir /opt \
     && cd /opt \
     && wget https://download.dokuwiki.org/src/dokuwiki/dokuwiki-$VERSION.tgz \
