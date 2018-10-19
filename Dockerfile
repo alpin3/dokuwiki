@@ -16,4 +16,4 @@ RUN apk --update --no-cache add wget ca-certificates php7-session php7-curl php7
 
 ADD scripts/ /scripts
 
-VOLUME ["/dokuwiki/data", "/dokuwiki/lib/plugins", "/dokuwiki/conf", "/dokuwiki/lib/tpl"]
+VOLUME ["/opt/dokuwiki/data", "/opt/dokuwiki/lib/plugins", "/opt/dokuwiki/conf", "/opt/dokuwiki/lib/tpl"]
