@@ -1,10 +1,10 @@
-FROM alpin3/php7-apache
+FROM ghcr.io/alpin3/php83-apache
 MAINTAINER kost - https://github.com/kost
 
-ENV VERSION  2018-04-22a
+ENV VERSION  2024-02-06b
 
-RUN apk --update --no-cache add wget ca-certificates php7-session php7-curl php7-gd php7-json php7-openssl php7-xml php7-zlib php7-ldap \
-    && mkdir /opt \
+RUN apk --update --no-cache add wget ca-certificates php83-session php83-curl php83-gd php83-json php83-openssl php83-intl php83-xml php83-zlib php83-ldap php83-pdo_sqlite \
+    && mkdir -p /opt \
     && cd /opt \
     && wget https://download.dokuwiki.org/src/dokuwiki/dokuwiki-$VERSION.tgz \
     && tar zxf dokuwiki*.tgz \
